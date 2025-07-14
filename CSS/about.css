@@ -1,0 +1,255 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f4f1ed;
+  color: #cbb59b;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Background Banner */
+.bg-image {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+/* Logo & Navbar */
+.main-logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 140px;
+}
+.navbar {
+  position: absolute;
+  top: 35px;
+  right: 50px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+.navbar a {
+  color: #efe9e7;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+.navbar a:hover {
+  border-color: #cbb59b;
+}
+
+/* Hero Heading */
+.hero-content {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.hero-content h1 {
+  color: #fff;
+  font-size: 64px;
+  letter-spacing: 8px;
+}
+
+/* About Corretto Section */
+.about-corretto-section {
+  background: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+.about-logo {
+  width: 240px;
+  margin-bottom: 50px;
+}
+.about-center-content h2 {
+  font-size: 34px;
+  color: #4b2e2e;
+  margin-bottom: 30px;
+}
+.about-text p {
+  max-width: 800px;
+  margin: 12px auto;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Image Grid */
+.about-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+.about-image-box img {
+  width: 100%;
+  display: block;
+}
+.about-image-box p {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Testimonials */
+.testimonial-section {
+  background: url('../aboutUsImages/p2-parallax-img-1.jpg') no-repeat center/cover;
+  padding: 100px 20px;
+  color: #fff;
+  text-align: center;
+}
+.testimonial-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.testimonial-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 10px 0;
+  font-style: italic;
+}
+.testimonial-author {
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Stats Section */
+.stats-section {
+  background: #f9f6f4;
+  padding: 60px 20px;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+.stat-item h2 {
+  font-size: 40px;
+  color: #e98648;
+}
+.stat-item h4 {
+  font-size: 16px;
+  color: #60392d;
+  text-transform: uppercase;
+}
+.stat-item p {
+  font-size: 14px;
+  color: #6d4c41;
+}
+
+/* Contact Banner */
+.contact-banner {
+  background: url('../images/p2-background-img-1.jpg') no-repeat center/cover;
+  padding: 60px 30px;
+  color: #3e2723;
+}
+.contact-content {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact-text, .contact-button {
+  flex: 1 1 300px;
+}
+.btn-contact {
+  background: #4e342e;
+  color: #fff8e1;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn-contact:hover {
+  background: #3e2723;
+}
+
+/* Footer */
+.site-footer {
+  background: url('../images/footer-top-img-1.jpg') no-repeat center/cover;
+  padding: 60px 30px;
+  color: #fff8e1;
+}
+.footer-content {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+.footer-logo {
+  width: 160px;
+  margin-bottom: 20px;
+}
+.footer-about p, .footer-address p {
+  font-size: 15px;
+  color: #e0cba3;
+}
+.footer-address h3 {
+  font-size: 20px;
+  margin-top: 25px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: 30px;
+  padding-top: 15px;
+}
+.footer-bottom p {
+  font-size: 13px;
+}
+.social-icons a {
+  color: #f5e6c4;
+  margin-left: 12px;
+  font-size: 18px;
+  transition: color 0.3s, transform 0.3s;
+}
+.social-icons a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
